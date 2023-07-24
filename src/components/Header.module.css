@@ -1,0 +1,68 @@
+@keyframes slideshow {
+	0% {
+		background-image: url("../assets/img/bg1.png");
+	}
+	10% {
+		background-image: url("../assets/img/bg2.png");
+	}
+	20% {
+		background-image: url("../assets/img/bg3.png");
+	}
+	30% {
+		background-image: url("../assets/img/bg4.png");
+	}
+	40% {
+		background-image: url("../assets/img/bg5.png");
+	}
+	50% {
+		background-image: url("../assets/img/bg6.png");
+	}
+	60% {
+		background-image: url("../assets/img/bg7.png");
+	}
+	70% {
+		background-image: url("../assets/img/bg8.png");
+	}
+	80% {
+		background-image: url("../assets/img/bg9.png");
+	}
+	90% {
+		background-image: url("../assets/img/bg10.png");
+	}
+	100% {
+		background-image: url("../assets/img/bg11.png");
+	}
+}
+
+.header {
+	position: relative;
+
+	height: 80vh;
+
+	width: 100%;
+	background-position: center center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	animation: slideshow 60s cubic-bezier(0, 1, 0, 1) infinite;
+}
+
+.header span {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	> h1,
+	h2 {
+		color: #fff;
+		font-weight: 700;
+		text-align: center;
+		/* text outline: */
+		text-shadow: -1px 1px 0 #000, 1px 1px 0 #000, 1px -1px 0 #000,
+			-1px -1px 0 #000;
+
+		font-size: 128px;
+	}
+	> h2 {
+		font-size: 56px;
+	}
+}

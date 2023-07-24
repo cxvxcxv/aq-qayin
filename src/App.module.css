@@ -1,0 +1,20 @@
+.main {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+
+	& h2 {
+		font-weight: 700;
+
+		font-size: 48px;
+	}
+
+	& h3 {
+		font-weight: 700;
+		color: #161026;
+
+		font-size: 24px;
+	}
+}
+
